@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 // Hooks
 function App() {
@@ -8,16 +6,35 @@ function App() {
   // let counter = 5;
   const addValue = () => {
     // console.log(counter);
-
     // counter = counter + 1;
-    if (counter < 20) {
-      setCounter(counter + 1);
-    }
+    // if (counter < 20) {
+    //   setCounter(counter + 1);
+    //   setCounter(counter + 1);
+    //   setCounter(counter + 1);
+    //   setCounter(counter + 1);
+    // }
+
+    // add multiple value on one click
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
   };
 
   const removeValue = () => {
     if (counter > 0) {
-      setCounter(counter - 1);
+      // setCounter(counter - 1);
+      // setCounter(counter - 1);
+      // setCounter(counter - 1);
+      // setCounter(counter - 1);
+      // setCounter(counter - 1);
+
+      // decrease multiple value on one click
+      setCounter((prevCounter) => prevCounter - 1);
+      setCounter((prevCounter) => prevCounter - 1);
+      setCounter((prevCounter) => prevCounter - 1);
+      setCounter((prevCounter) => prevCounter - 1);
     }
   };
   return (
